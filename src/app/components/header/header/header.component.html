@@ -1,3 +1,11 @@
 <mat-toolbar color="primary">
-    <span>AZCA-Chat-App Messages</span>
+    <span>
+        <a routerLink="/">AZCA-Chat-App Messages</a>
+    </span>
+    <span class='spacer'></span>
+    <ul>
+        <li>
+            <a mat-button [routerLink]="['/create']" routerLinkActive='mat-accent'>New Chat</a>
+        </li>
+    </ul>
 </mat-toolbar>
