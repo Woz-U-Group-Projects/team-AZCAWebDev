@@ -16,7 +16,7 @@ export class PostsService {
   constructor(private http: HttpClient, private router: Router) {}
 
   getPosts(chatsPerPage: number, currentPage: number) {
-    const queryParams = `?pagesize=${chatsPerPage}&page${currentPage}`;
+    const queryParams = `?pagesize=${chatsPerPage}&page=${currentPage}`;
     this.http
     .get<{message: string, posts: any, maxPosts: number }>(
       'http://localhost:3000/api/posts' + queryParams
