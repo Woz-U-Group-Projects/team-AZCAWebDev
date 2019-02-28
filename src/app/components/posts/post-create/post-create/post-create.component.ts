@@ -11,6 +11,7 @@ import { Post } from 'src/app/models/post';
   styleUrls: ['./post-create.component.css']
 })
 export class PostCreateComponent implements OnInit {
+  isLoading = false;
   enteredTitle = '';
   enteredContent = '';
   post: Post;
